@@ -253,7 +253,14 @@ h2 { font-size: clamp(2.4rem, 7.5vw, 3.8rem); line-height: 1.05; }
 .qr figcaption { font-size: .74rem; font-weight: 600; letter-spacing: .2em; text-transform: uppercase; color: var(--ink-soft); }
 .notice { width: 100%; max-width: 560px; text-align: left; padding: 20px 22px; border: 1px solid var(--claret); border-radius: 8px; background: rgba(156, 61, 58, .06); display: grid; gap: 6px; }
 .notice p { margin: 0; line-height: 1.6; color: var(--ink); }
-.notice .notice-label { font-size: .74rem; font-weight: 700; letter-spacing: .22em; text-transform: uppercase; color: var(--claret); }
+.notice-label { font-size: .74rem; font-weight: 700; letter-spacing: .22em; text-transform: uppercase; color: var(--claret); }
+.rates { grid-column: 1 / -1; margin-top: 10px; padding: 18px 20px; border: 1px solid var(--claret); border-radius: 8px; background: rgba(156, 61, 58, .06); display: grid; gap: 10px; }
+.rates p { margin: 0; line-height: 1.6; color: var(--ink); }
+.rate-list { margin: 0; display: grid; }
+.rate-list div { display: flex; justify-content: space-between; align-items: baseline; gap: 16px; padding: 8px 0; border-bottom: 1px solid var(--hair); }
+.rate-list div:last-child { border-bottom: 0; }
+.rate-list dt { color: var(--ink); min-width: 0; }
+.rate-list dd { margin: 0; font-weight: 700; color: var(--claret); font-variant-numeric: tabular-nums; white-space: nowrap; }
 .soon {
   font-family: var(--serif); font-style: italic; font-size: clamp(1.5rem, 4.6vw, 2rem); color: var(--claret); margin: 0; line-height: 1.25; max-width: 22ch;
 }
@@ -376,10 +383,6 @@ footer.foot a { font-size: .74rem; letter-spacing: .24em; text-transform: upperc
           <h2>Accommodation <em>options</em></h2>
           <p class="lede">For families travelling from further afield, here are a few hotels at or near the venue. These are suggestions only, chosen for how close they are to Moor Hall. Please book directly with the hotel.</p>
         </div>
-        <aside class="notice">
-          <p class="notice-label">Before you book</p>
-          <p>We suggest waiting until the prom deposit has been paid to the hotel before booking, especially at Moor Hall, as we may be able to get special prom rates. We'll update this page when we know more.</p>
-        </aside>
         <ul class="stays">
           <li class="stay">
             <div>
@@ -390,6 +393,16 @@ footer.foot a { font-size: .74rem; letter-spacing: .24em; text-transform: upperc
             <div class="contact">
               <a class="tel" href="tel:+441213083751">0121 308 3751</a>
               <a class="web" href="https://www.moorhallhotel.co.uk/" target="_blank" rel="noopener">Website ↗</a>
+            </div>
+            <div class="rates">
+              <p class="notice-label">Prom rates · bed and breakfast</p>
+              <dl class="rate-list">
+                <div><dt>Classic double, 2 adults</dt><dd>£153.00</dd></div>
+                <div><dt>Classic double, 1 adult and 1 child</dt><dd>£151.12</dd></div>
+                <div><dt>Family room, 2 adults and 2 children</dt><dd>£200.99</dd></div>
+              </dl>
+              <p><strong>To book:</strong> call the reservations team on 0121 308 3751 and say you are attending the prom to get this rate.</p>
+              <p><strong>Payment:</strong> payable at the time of booking and non-refundable.</p>
             </div>
           </li>
           <li class="stay">
